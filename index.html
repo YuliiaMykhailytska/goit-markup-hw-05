@@ -625,11 +625,16 @@
     </footer>
 
     <!-- MODAL BTN -->
-    <div class="backdrop is-hidden">
-      <div class="modal" data-modal>
-        <button data-modal-close>Close</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal-button" data-modal-close>
+          <svg class="icon-close-modal-button" width="24" height="24">
+            <use href="./images/icon.svg#icon-close_modal_button"></use>
+          </svg>
+        </button>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
