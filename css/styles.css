@@ -694,3 +694,36 @@ button {
   background-color: var(--menu-link-color);
   fill: var(--main-color);
 }
+
+/* =========OVERLAY PORT=========== */
+.overlay {
+  position: absolute;
+
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 164px;
+  padding-left: 32px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--footer-logo-color);
+  background-color: var(--logo-color);
+  overflow: auto;
+  transform: translate(0, 100%);
+  transition: var(--transition-hover-focus);
+}
+
+.team-list-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-main-link:hover .overlay,
+.portfolio-main-link:focus .overlay {
+  transform: translate(0, 0);
+}
